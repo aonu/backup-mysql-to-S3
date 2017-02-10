@@ -2,7 +2,6 @@ require 'mail'
 require 'time'
 require 'fileutils'
 require 'yaml'
-require  'byebug'
 require 'socket'
 
 
@@ -111,8 +110,8 @@ class S3MysqlBackup
 
 
       Mail.deliver do
-        from     mail_configuration["mail_user"]
-        to       mail_configuration["mail_user"]
+        from     mail_configuration["mail_from"]
+        to       mail_configuration["mail_to"]
         subject  subject
         body     content
       end
