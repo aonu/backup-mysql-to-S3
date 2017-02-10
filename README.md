@@ -2,4 +2,4 @@
 Adaptation to the S3 MySQL Backup gem 
 
 # Usage 
-ruby /bin/s3-mysql-backup.rb database config.yml
+_ruby /bin/s3-mysql-backup.rb database config.yml_
